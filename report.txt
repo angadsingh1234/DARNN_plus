@@ -1,0 +1,31 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'DARNN.py'
+ outputting to 'DARNN_v2.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/Users/angadsingh/miniconda3/lib/python3.10/site-packages/tensorflow/tools/compatibility/ast_edits.py", line 931, in update_string_pasta
+    t = pasta.parse(text)
+  File "/Users/angadsingh/miniconda3/lib/python3.10/site-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/Users/angadsingh/miniconda3/lib/python3.10/site-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/Users/angadsingh/miniconda3/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 181
+    z = tf.sigmoid(tf.matmul(last_output, W_z) + tf.matmul(states_s[i], U_z) + tf.matmul(c, C_z))
+                                                                                                 ^
+IndentationError: unindent does not match any outer indentation level
+
+--------------------------------------------------------------------------------
+
